@@ -10,17 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyService">
         <service
-            android:name=".MyBoundService"
-            android:enabled="true"
-            android:exported="true"></service>
-        <service
-            android:name=".MyJobIntentService"
-            android:exported="false"
-            android:permission="android.permission.BIND_JOB_SERVICE" />
-        <service
             android:name=".MyService"
             android:enabled="true"
-            android:exported="true" />
+            android:exported="true"/>
 
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -29,6 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
